@@ -8,6 +8,40 @@
 @import 'base/base';
 
 /* components */
-@import 'components/header';
 
 /* pages */
+
+/* remove this when starting a new project */
+body {
+  background-color: $clr-1;
+
+  @include respond-to('large') {
+    background-color: $clr-5;
+  }
+
+  @include respond-to('medium') {
+    background-color: $clr-2;
+  }
+
+  @include respond-to('small') {
+    background-color: $clr-4;
+  }
+}
+.hello-section {
+  width: 30rem;
+  height: 20rem;
+
+  background-color: $clr-6;
+
+  @include respond-to('large') {
+    background-color: $clr-2;
+  }
+
+  @include respond-to('medium') {
+    background-color: $clr-4;
+  }
+
+  @include respond-to('small') {
+    background-color: $clr-1;
+  }
+}
