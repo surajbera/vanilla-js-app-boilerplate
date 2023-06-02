@@ -1,0 +1,13 @@
+/*common abstracts */
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+
+/*common base */
+@import 'base/reset';
+@import 'base/base';
+
+/* components */
+@import 'components/header';
+
+/* pages */

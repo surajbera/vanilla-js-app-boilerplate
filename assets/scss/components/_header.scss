@@ -1,0 +1,183 @@
+.site-logo {
+  width: 20.7rem;
+  height: 3.2rem;
+
+  svg {
+    flex-grow: 1;
+  }
+
+  @include respond-to('ipad-landscape') {
+    width: 16.8rem;
+    height: 2.6rem;
+  }
+}
+
+.header {
+  background-color: $white-clr;
+
+  &-inner {
+    justify-content: space-between;
+    padding: 2.4rem 0;
+
+    @include respond-to('ipad-landscape') {
+      padding: 1.4rem 0;
+    }
+  }
+  &-logo {
+  }
+  &-right {
+    position: relative;
+  }
+  &-action-wrap {
+  }
+  &-action {
+    justify-content: center;
+    position: relative;
+  }
+  &-action-search {
+    height: 3.8rem;
+    width: 3.8rem;
+    margin: 0 0 0 2rem;
+    overflow: hidden;
+
+    @include respond-to('ipad-landscape') {
+      transform: scale(0.9);
+      transform-origin: right;
+    }
+  }
+  .search-icon {
+  }
+  .search-x-icon {
+    display: none;
+
+    svg {
+      height: 3.4rem;
+      width: 3.4rem;
+      display: flex;
+    }
+  }
+  &-menu-wrap {
+    position: absolute;
+    top: calc(100% + 2rem);
+    right: 0;
+    background-color: $white-clr;
+    z-index: 11;
+    color: #000;
+    display: none;
+    border-radius: 0.6rem;
+    min-width: 15rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 18px;
+      top: -15px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 15px 15px;
+    }
+
+    ul {
+      padding: 0.5rem 2rem;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin: 0 0 0.6rem;
+      }
+    }
+    a {
+      @include add-transition(color);
+    }
+  }
+  &-action-menu {
+    height: 3.8rem;
+    width: 3.8rem;
+    margin: 0 0 0 2rem;
+    overflow: hidden;
+
+    @include respond-to('ipad-landscape') {
+      margin: 0 0 0 1rem;
+      transform: scale(0.9);
+      transform-origin: right;
+    }
+  }
+  .x-icon {
+    display: none;
+
+    svg {
+      height: 3.4rem;
+      width: 3.4rem;
+      display: flex;
+    }
+  }
+  &-search-form {
+    position: absolute;
+    top: 0;
+    right: 10rem;
+    display: none;
+    z-index: 5;
+    @include respond-to('ipad-landscape') {
+      right: 9rem;
+    }
+  }
+  &-search-input {
+    width: 30rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: $white-clr;
+    color: $black-clr;
+    padding: 0 1.5rem;
+
+    &::placeholder {
+      color: $gray-clr-1;
+    }
+
+    @include respond-to('extra-small') {
+      width: 25rem;
+    }
+  }
+}
+
+.menu-open {
+  .x-icon {
+    display: block;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .header-menu-wrap {
+    animation: fadeIn 0.3s $timing-function-1;
+    display: block;
+    box-shadow: rgba($black-clr-2, 0.1) 0px 4px 6px -1px, rgba($black-clr-2, 0.06) 0px 2px 4px -1px;
+    li {
+      opacity: 0;
+      transform: translateX(3px);
+      animation: menuFadeRight 0.5s $timing-function-1 forwards;
+
+      @for $i from 1 to 6 {
+        &:nth-child(#{$i}) {
+          animation-delay: 0.1s * $i;
+        }
+      }
+    }
+  }
+}
+
+.search-open {
+  .header-search-form {
+    animation: menuFadeRight 0.3s $timing-function-1;
+    display: block;
+    box-shadow: rgba($black-clr-2, 0.1) 0px 4px 6px -1px, rgba($black-clr-2, 0.06) 0px 2px 4px -1px;
+    @include respond-to('ipad-portrait') {
+      animation: fadeInUp 0.3s $timing-function-1;
+    }
+  }
+  .search-x-icon {
+    display: block;
+  }
+  .search-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+/* Font */
+$theme-font: 'Nunito', sans-serif;
+
+/* Colors */
+$primary-clr: #b2da46;
+
+$black-clr: #222;
+$white-clr: #fff;
+$black-clr-1: #384653;
+$black-clr-2: #111111;
+$black-clr-3: #011e30;
+$black-clr-4: #001528;
+
+$gray-clr-1: #eeeeee;
+$gray-clr-2: #ddd;
+$gray-clr-3: #bfbfbf;
+$gray-clr-4: #a9a9a9;
+$gray-clr-5: #999;
+$gray-clr-6: #777;
+$gray-clr-7: #555;
+$gray-clr-8: #384653;
+
+/* sidebar width */
+$sidebar-width: 36rem;
+
+/* container width */
+$container-width: 114rem;
+
+/* timing function */
+$timing-function-1: cubic-bezier(0.86, 0, 0.07, 1);
+
+/* breakpoints -> SASS Map */
+$breakpoints: (
+  'extra-small': 479px,
+  'small': 575px,
+  'ipad-portrait': 767px,
+  'medium': 991px,
+  'ipad-landscape': 1024px,
+  'large': 1199px,
+);
