@@ -342,7 +342,7 @@ button {
 /* pages */
 /* remove this when starting a new project */
 body {
-  background-color: purple;
+  background-color: coral;
 }
 @media only screen and (max-width: 1199px) {
   body {

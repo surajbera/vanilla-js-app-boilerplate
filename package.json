@@ -6,7 +6,8 @@
   "scripts": {
     "scss": "sass assets/scss/main.scss assets/css/scss-output.css --watch",
     "build:css": "postcss assets/css/scss-output.css -o dist/style.min.css --watch",
-    "build:js": "webpack"
+    "build:js": "webpack",
+    "dev": "concurrently  \"npm run scss\" \"npm run build:css\" \"npm run build:js\""
   },
   "keywords": [
     "html",

@@ -1,1 +1,1 @@
-!function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){console.log("Constant Variable Menu Interaction"),console.log("Constant Variable Form Validation"),console.log("Webpack and babel setup is working as expected")}))}();
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){console.log("Constant Variable Menu Interaction"),console.log("Constant Variable Form Validation"),console.log("Working as expected")}))}();
