@@ -338,47 +338,8 @@ button {
   min-height: 10rem;
 }
 
-/* components */
-/* pages */
-/* remove this when starting a new project */
 body {
-  background-color: lavender;
-}
-@media only screen and (max-width: 1199px) {
-  body {
-    background-color: #a5b4fc;
-  }
-}
-@media only screen and (max-width: 991px) {
-  body {
-    background-color: #fbbf24;
-  }
-}
-@media only screen and (max-width: 575px) {
-  body {
-    background-color: #6ee7b7;
-  }
-}
-
-.hello-section {
-  width: 30rem;
-  height: 20rem;
-  background-color: #d8b4fe;
-}
-@media only screen and (max-width: 1199px) {
-  .hello-section {
-    background-color: #fbbf24;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .hello-section {
-    background-color: #6ee7b7;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .hello-section {
-    background-color: #f87171;
-  }
+  background: greenyellow;
 }
 
 /*# sourceMappingURL=scss-output.css.map */
